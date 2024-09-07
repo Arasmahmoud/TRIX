@@ -63,11 +63,23 @@
             background-color: #333;
         }
 
-        .app-image {
+        .app-image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin: 30px auto;
+        }
+
+        .app-image {
             width: 60%;
             max-width: 400px;
-            animation: zoomIn 1s ease-in-out;
+            margin: 0 20px;
+        }
+
+        .sub-image {
+            width: 20%;
+            max-width: 100px;
+            margin: 0 20px;
         }
 
         footer {
@@ -126,12 +138,14 @@
 <section>
     <h2>Welcome to Trix!</h2>
     <p>Calculate your Trix game scores easily and efficiently with our Trix Calculator.</p>
-    
-    <!-- App Screenshot Image -->
-    <img src="full_logok.png" alt="Trix App Screenshot" class="app-image">
-    
-    <!-- Download Button -->
-    <a href="#" class="button">Download the App</a>
+    <div class="app-image-container">
+        <!-- App Screenshot Image -->
+        <img src="full_logok.png" alt="Trix App Screenshot" class="app-image">
+        <!-- Sub Image of App -->
+        <img src="screen1.jpg" alt="Trix App Sub Image" class="sub-image">
+        <!-- Download Button -->
+        <a href="#" class="button">Download the App</a>
+    </div>
 </section>
 
 <footer>
